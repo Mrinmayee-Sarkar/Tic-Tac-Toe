@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sixtyfour', sans-serif;
+}
+
+body{
+   background-color: #3C005A;
+   text-align: center;
+}
+
+.title{
+    position: absolute;
+    top:3%;
+    left: 35.25%;
+    padding: 0.5vw 1vw;
+    font-size: 2.5vw;
+    color:#492000;
+    font-weight: bold;
+    background-color: #FFFDD0;
+    border-radius: 5vw;
+}
+
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   height: 60vh;
+ margin-top: 7vw;
+}   
+
+.box{
+    width: 50vmin;
+    height: 50vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+
+
+
+}
+
+#btn{
+    background-color: #492000;
+    width: 15vmin;
+    height: 15vmin;
+    border-radius: 10%;
+    border-style: none;
+    color: #F6E70C;
+font-size: 3.5vw;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+
+
+.reset{
+    margin-top: 3vw;
+    border-style: none;
+    padding: 1vw 3vw;
+    background-color: #FFFDD0;
+    color:#492000;
+    border-radius: 5%;
+    font-size: 1.25vw;
+    font-weight: bolder;
+}
+
+.newGame{
+    margin-top: 3vw;
+    border-style: none;
+    padding: 1vw 2vw;
+    background-color: #6E260E;
+    color: #FAF5EF;
+    border-radius: 5%;
+    font-size: 1vw;
+    
+}
+#newBtn{
+    display: none;
+}
+
+.winner{
+    color: #FFFDD0;
+    height: 4vmin;
+    font-size: 5vmin;
+    margin-top: 0.5vw;
+    font-weight: bold;
+
+}
+
+#winner{
+    display: none;
+}
