@@ -6,7 +6,10 @@
 }
 
 body{
-   background-color: #3C005A;
+   background-color: #420013;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
    text-align: center;
 }
 
@@ -16,7 +19,7 @@ body{
     left: 35.25%;
     padding: 0.5vw 1vw;
     font-size: 2.5vw;
-    color:#492000;
+    color:#300511;
     font-weight: bold;
     background-color: #FFFDD0;
     border-radius: 5vw;
@@ -44,13 +47,12 @@ body{
 
 }
 
-#btn{
-    background-color: #492000;
+.btn{
+    background-color: #d5eeec;
     width: 15vmin;
     height: 15vmin;
     border-radius: 10%;
-    border-style: none;
-    color: #F6E70C;
+    border: none;
 font-size: 3.5vw;
 }
 
@@ -65,10 +67,10 @@ font-size: 3.5vw;
 
 .reset{
     margin-top: 3vw;
-    border-style: none;
+    border: none;
     padding: 1vw 3vw;
     background-color: #FFFDD0;
-    color:#492000;
+    color:#300511;
     border-radius: 5%;
     font-size: 1.25vw;
     font-weight: bolder;
@@ -76,27 +78,80 @@ font-size: 3.5vw;
 
 .newGame{
     margin-top: 3vw;
-    border-style: none;
+    border: none;
     padding: 1vw 2vw;
-    background-color: #6E260E;
-    color: #FAF5EF;
+    background-color: #D36CB6;
+    color: #000000;
     border-radius: 5%;
-    font-size: 1vw;
+    font-size: 1.25vw;
+    font-weight: bolder;
+    animation: blink 0.7s infinite;
     
 }
+
+@keyframes blink {
+    0%, 49%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 #newBtn{
     display: none;
 }
 
-.winner{
-    color: #FFFDD0;
-    height: 4vmin;
-    font-size: 5vmin;
-    margin-top: 0.5vw;
-    font-weight: bold;
-
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-#winner{
-    display: none;
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/*-----------------------------------Mobile Responsiveness-------------------------------------------------------------------------*/
+@media screen and (max-width:600px) {
+    .title{
+        position: absolute;
+        top:3%;
+        left: 35.25%;
+        padding: 3vw 2vw;
+        font-size: 4vw;
+        color:#300511;
+        font-weight: bold;
+        background-color: #FFFDD0;
+        border-radius: 5vw;
+    }
 }
